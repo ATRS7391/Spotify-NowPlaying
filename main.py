@@ -9,7 +9,7 @@ class Spotify:
     def nowplaying(self):
         def _find_spotify_uwp(hwnd, _windows):
             if win32gui.GetClassName(hwnd) == "Chrome_WidgetWin_0" and not win32gui.GetWindowText(hwnd).startswith("Spotify") and win32gui.GetWindowText(hwnd) != "":
-                windows.append(win32gui.GetWindowText(hwnd))
+                _windows.append(win32gui.GetWindowText(hwnd))
 
         windows = []
         win32gui.EnumWindows(_find_spotify_uwp, windows)
