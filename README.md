@@ -6,5 +6,5 @@ A simple Python 3 script to get your currently played track title and artist nam
 To run this script, you need `win32gui`. Install using
 
 ```
-  pip install win32gui
+pip install win32gui
 ```
